@@ -74,16 +74,6 @@ function HomePage() {
           </div>
         </div>
       </header>
-
-      {/* Mascot */}
-      <section className="px-6 pb-16 max-w-7xl mx-auto flex justify-center">
-        <img
-          src={mascotImg}
-          alt="Sugar Shack Cafe mascot holding a trophy and a stack of pancakes"
-          className="w-48 md:w-64 h-auto"
-        />
-      </section>
-
       {/* Location */}
       <section id="location" className="px-6 pb-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-px bg-border border border-border">
