@@ -79,7 +79,7 @@ function AboutPage() {
             that help run the business now. These young adults also wait tables
             and help out with the day to day operations.
           </p>
-          <p className="font-display text-2xl uppercase tracking-tight pt-4">
+          <p className="text-lg leading-relaxed pt-4 italic">
             Many regulars come to The Sugar Shack everyday, sometimes twice a
             day, because they feel at home.
           </p>
