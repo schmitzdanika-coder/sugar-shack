@@ -23,7 +23,7 @@ function DirectionsPage() {
 
       <header className="px-6 pt-16 pb-12 max-w-7xl mx-auto">
         <span className="font-mono text-xs uppercase tracking-widest text-accent">
-          Half a Block from the Pier
+          213½ Main Street, Huntington Beach
         </span>
         <h1 className="mt-4 font-display text-6xl md:text-8xl uppercase leading-[0.9] tracking-tighter">
           Find Us
@@ -41,14 +41,6 @@ function DirectionsPage() {
             </p>
           </div>
           <div>
-            <p className="uppercase text-accent mb-2 tracking-widest">Hours</p>
-            <p className="text-base">
-              Open Daily
-              <br />
-              6:00 AM – 2:00 PM
-            </p>
-          </div>
-          <div>
             <p className="uppercase text-accent mb-2 tracking-widest">Phone</p>
             <a
               href="tel:7145360355"
@@ -56,20 +48,6 @@ function DirectionsPage() {
             >
               (714) 536-0355
             </a>
-          </div>
-          <div>
-            <p className="uppercase text-accent mb-2 tracking-widest">Parking</p>
-            <p className="text-base leading-relaxed">
-              Metered street parking on Main, Walnut and PCH. Public lots on 1st &
-              Pacific Coast Highway. Bike racks out front.
-            </p>
-          </div>
-          <div>
-            <p className="uppercase text-accent mb-2 tracking-widest">Getting Here</p>
-            <p className="text-base leading-relaxed">
-              From PCH, turn inland onto Main Street. We're on the right, just past
-              the Plaza, between Walnut and Olive.
-            </p>
           </div>
           <a
             href="https://www.google.com/maps/dir/?api=1&destination=213+Main+St+Huntington+Beach+CA+92648"

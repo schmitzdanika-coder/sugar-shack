@@ -7,7 +7,7 @@ export function SiteFooter() {
             Sugar Shack Cafe
           </p>
           <p className="font-mono text-[10px] opacity-50 uppercase tracking-widest">
-            See you on the sand.
+            Established 1967
           </p>
         </div>
         <p className="font-mono text-[10px] uppercase tracking-widest opacity-50 text-center">

@@ -82,15 +82,11 @@ function MenuPage() {
 
       <header className="px-6 pt-16 pb-12 max-w-7xl mx-auto">
         <span className="font-mono text-xs uppercase tracking-widest text-accent">
-          Served All Day · Six Days a Week
+          Breakfast & Lunch
         </span>
         <h1 className="mt-4 font-display text-6xl md:text-8xl uppercase leading-[0.9] tracking-tighter">
           The Menu
         </h1>
-        <p className="mt-6 max-w-xl italic text-lg opacity-80">
-          Fifty years of recipes, none of them complicated. Hot coffee, cold orange
-          juice, and a stool at the counter.
-        </p>
       </header>
 
       <section className="px-6 pb-24 max-w-7xl mx-auto">

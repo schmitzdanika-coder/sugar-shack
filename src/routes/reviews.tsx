@@ -6,11 +6,11 @@ export const Route = createFileRoute("/reviews")({
   component: ReviewsPage,
   head: () => ({
     meta: [
-      { title: "Reviews — The Sugar Shack Cafe, Huntington Beach" },
+      { title: "Press & Reviews — The Sugar Shack Cafe" },
       {
         name: "description",
         content:
-          "What locals, surfers and visitors are saying about the Sugar Shack Cafe in Huntington Beach.",
+          "What the Orange County Register, Huntington Beach Independent, and SAVEUR.com have written about the Sugar Shack Cafe.",
       },
     ],
   }),
@@ -19,39 +19,33 @@ export const Route = createFileRoute("/reviews")({
 const reviews = [
   {
     quote:
-      "If you only eat one breakfast in Huntington Beach, eat it at the Sugar Shack. The Main Street Omelette is unreal and the coffee just keeps coming.",
-    author: "Lauren K.",
-    source: "Yelp",
+      "There is a tradition in Huntington Beach that says that no one is a true surfer unless they have been to the Sugar Shack.",
+    author: "Huntington Beach Independent",
   },
   {
     quote:
-      "Surfed at sunrise, ate here at 7. The bacon was crispy, the eggs were perfect, and the woman at the counter remembered my name from last year.",
-    author: "Mike D.",
-    source: "Google",
+      "The Shack is primarily a breakfast and lunch place, with any kind of wake-you-up egg dish you have a craving for and possibly the best burgers in Huntington Beach.",
+    author: "John Reger, Orange County Register",
   },
   {
     quote:
-      "It feels like nothing has changed since 1975 and that's exactly the point. Tiny, busy, perfect. Bring cash and patience.",
-    author: "Anya P.",
-    source: "Tripadvisor",
+      "Michele Turner and her family have been operating the landmark eatery since 1967, and they really care about every customer. Michele gets to the kitchen before the sun rises and starts preparing the daily special.",
+    author: "Orange County Register",
   },
   {
     quote:
-      "The Shack Burrito is the size of my forearm. Three of us split one and still couldn't finish. Best $18 I've spent in HB.",
-    author: "Ben R.",
-    source: "Yelp",
+      "A block from the waves in Huntington Beach, surfers fill up on breakfast burritos and camaraderie.",
+    author: "SAVEUR.com",
   },
   {
     quote:
-      "Half a block from the sand, no pretense, no wait at 6:30 AM. This is what a beach-town diner is supposed to be.",
-    author: "Carlos M.",
-    source: "Google",
+      "Every surfer, from the world champion Kelly Slater to the little grom who's just starting out, has had a meal at the Shack.",
+    author: "Andy Verdone, HB High School Surf Team Coach",
   },
   {
     quote:
-      "My grandfather brought my dad here. My dad brought me here. I'm bringing my kids here. Some places you just don't change.",
-    author: "Jess W.",
-    source: "Facebook",
+      "Who in this town doesn't love Michele Turner? So many days I come out of the water freezing cold, and I've got to get a cup of coffee and some of Michele's pancakes.",
+    author: "Corky Carroll, Pro Surfer",
   },
 ];
 
@@ -62,13 +56,14 @@ function ReviewsPage() {
 
       <header className="px-6 pt-16 pb-12 max-w-7xl mx-auto">
         <span className="font-mono text-xs uppercase tracking-widest text-accent">
-          From the Counter
+          Press & Reviews
         </span>
         <h1 className="mt-4 font-display text-6xl md:text-8xl uppercase leading-[0.9] tracking-tighter">
-          Reviews
+          What They Say
         </h1>
         <p className="mt-6 max-w-xl italic text-lg opacity-80">
-          Fifty years of regulars, surfers, and first-timers. Here's a few of them.
+          TripAdvisor Certificate of Excellence five years running (2011–2015) and
+          MyFox Hot List Best Breakfast (2009 & 2010).
         </p>
       </header>
 
@@ -82,9 +77,8 @@ function ReviewsPage() {
               <blockquote className="text-xl md:text-2xl italic leading-snug">
                 “{r.quote}”
               </blockquote>
-              <figcaption className="font-mono text-xs uppercase tracking-widest flex justify-between opacity-70">
-                <span>{r.author}</span>
-                <span className="text-accent">{r.source}</span>
+              <figcaption className="font-mono text-xs uppercase tracking-widest opacity-70 text-accent">
+                — {r.author}
               </figcaption>
             </figure>
           ))}
