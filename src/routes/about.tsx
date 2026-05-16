@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import exterior from "@/assets/exterior.jpg";
+import exterior from "@/assets/storefront.jpg";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -79,7 +79,7 @@ function AboutPage() {
             that help run the business now. These young adults also wait tables
             and help out with the day to day operations.
           </p>
-          <p className="font-display text-2xl uppercase tracking-tight pt-4">
+          <p className="text-lg leading-relaxed pt-4 italic">
             Many regulars come to The Sugar Shack everyday, sometimes twice a
             day, because they feel at home.
           </p>
@@ -96,21 +96,22 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-foreground text-background py-24 px-6">
+      <section className="bg-foreground text-background py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tighter mb-16 border-b border-background/20 pb-4">
+          <h2 className="font-display text-2xl md:text-3xl uppercase tracking-tighter mb-10 border-b border-background/20 pb-3 text-center">
             Timeline
           </h2>
-          <ol className="space-y-10">
-            {timeline.map((t) => (
-              <li
-                key={t.year}
-                className="grid grid-cols-[6rem_1fr] md:grid-cols-[10rem_1fr] gap-6 items-baseline"
-              >
-                <span className="font-display text-3xl md:text-5xl uppercase text-accent">
+          <ol className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {timeline.map((t, i) => (
+              <li key={t.year} className="relative flex flex-col items-center text-center">
+                <div className="w-3 h-3 rounded-full bg-accent mb-3 ring-4 ring-background/10" />
+                {i < timeline.length - 1 && (
+                  <span className="hidden lg:block absolute top-[5px] left-[calc(50%+0.5rem)] right-[-50%] h-px bg-background/20" />
+                )}
+                <span className="font-display text-xl md:text-2xl uppercase text-accent leading-none">
                   {t.year}
                 </span>
-                <p className="text-lg opacity-90 leading-relaxed">{t.text}</p>
+                <p className="mt-2 text-xs opacity-80 leading-snug">{t.text}</p>
               </li>
             ))}
           </ol>
