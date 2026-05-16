@@ -3,6 +3,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import ryanCeremony from "@/assets/ryan-handprints-ceremony.jpg";
 import ryanStone from "@/assets/ryan-handprints-stone.jpg";
+import mascotImg from "@/assets/sugar-shack-mascot.png";
 
 export const Route = createFileRoute("/reviews")({
   component: ReviewsPage,
@@ -56,7 +57,12 @@ function ReviewsPage() {
     <div className="min-h-screen bg-background text-foreground font-body">
       <SiteNav />
 
-      <header className="px-6 pt-16 pb-12 max-w-7xl mx-auto">
+      <header className="px-6 pt-16 pb-12 max-w-7xl mx-auto relative">
+        <img
+          src={mascotImg}
+          alt="Sugar Shack Cafe mascot holding a trophy and a stack of pancakes"
+          className="hidden sm:block absolute top-4 right-6 w-24 md:w-32 h-auto"
+        />
         <span className="font-mono text-xs uppercase tracking-widest text-accent">
           Press & Reviews
         </span>
