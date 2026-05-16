@@ -74,28 +74,6 @@ function HomePage() {
         </div>
       </header>
 
-      {/* Image strip */}
-      <section className="px-6 pb-24">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
-          <img
-            src={breakfastImg}
-            alt="Breakfast at the Sugar Shack"
-            width={1024}
-            height={1024}
-            loading="lazy"
-            className="w-full aspect-square object-cover rounded-sm border border-border"
-          />
-          <img
-            src={pierImg}
-            alt="The Huntington Beach pier"
-            width={1280}
-            height={896}
-            loading="lazy"
-            className="w-full aspect-square object-cover rounded-sm border border-border bg-secondary"
-          />
-        </div>
-      </section>
-
       {/* Location */}
       <section id="location" className="px-6 pb-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-px bg-border border border-border">
