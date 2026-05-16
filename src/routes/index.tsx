@@ -92,43 +92,14 @@ function HomePage() {
         </div>
       </header>
 
-      {/* Signature Dishes */}
-      <section id="menu" className="bg-foreground text-background py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-end mb-16 border-b border-background/20 pb-4">
-            <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tighter">
-              From the Menu
-            </h2>
-            <span className="font-mono text-xs opacity-60 uppercase mb-2">
-              Breakfast & Lunch
-            </span>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {dishes.map((d) => (
-              <div key={d.name} className="group cursor-default">
-                <div className="flex justify-between items-baseline mb-2">
-                  <h3 className="font-display text-2xl uppercase group-hover:text-accent transition-colors">
-                    {d.name}
-                  </h3>
-                  <span className="font-mono text-sm italic">{d.price}</span>
-                </div>
-                <p className="text-sm opacity-70 leading-relaxed font-light">
-                  {d.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16">
-            <Link
-              to="/menu"
-              className="font-mono text-xs uppercase tracking-widest underline decoration-accent underline-offset-8 hover:text-accent transition-colors"
-            >
-              View the full menu →
-            </Link>
-          </div>
-        </div>
+      {/* Menu CTA */}
+      <section className="bg-foreground text-background py-20 px-6 text-center">
+        <Link
+          to="/menu"
+          className="inline-block font-display text-4xl md:text-6xl uppercase tracking-tighter underline decoration-accent underline-offset-8 hover:text-accent transition-colors"
+        >
+          View the Menu →
+        </Link>
       </section>
 
       {/* Heritage */}
