@@ -80,13 +80,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "The Sugar Shack Cafe — Huntington Beach Since 1967" },
-      { name: "twitter:title", content: "The Sugar Shack Cafe — Huntington Beach Since 1967" },
-      { name: "description", content: "Sweet Site Shine revamps websites, transforming them into visually appealing and user-friendly experiences." },
-      { property: "og:description", content: "Sweet Site Shine revamps websites, transforming them into visually appealing and user-friendly experiences." },
-      { name: "twitter:description", content: "Sweet Site Shine revamps websites, transforming them into visually appealing and user-friendly experiences." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8f8e1f5-d197-4b86-9734-6a38583e2e08/id-preview-6caf3890--959f19fb-f055-4729-ae6d-22ebe4d29068.lovable.app-1778890035476.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a8f8e1f5-d197-4b86-9734-6a38583e2e08/id-preview-6caf3890--959f19fb-f055-4729-ae6d-22ebe4d29068.lovable.app-1778890035476.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
