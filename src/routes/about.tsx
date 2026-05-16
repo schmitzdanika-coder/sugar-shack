@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import exterior from "@/assets/exterior.jpg";
+import exterior from "@/assets/storefront.jpg";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
