@@ -25,24 +25,6 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const dishes = [
-  {
-    name: "Main Street Omelette",
-    price: "$18.00",
-    desc: "Avocado, mushrooms, onions, sprouts & cheese.",
-  },
-  {
-    name: "Main Street Burrito",
-    price: "$18.00",
-    desc: "Avocado, mushrooms, onions, sprouts & cheese.",
-  },
-  {
-    name: "Keppler's",
-    price: "$18.00",
-    desc: "Eggs scrambled on an English muffin topped with sliced avocado, tomato, bacon & hollandaise sauce. Served with hashbrowns.",
-  },
-];
-
 function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground font-body">
