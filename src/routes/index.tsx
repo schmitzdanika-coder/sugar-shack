@@ -74,48 +74,6 @@ function HomePage() {
         </div>
       </header>
 
-      {/* Menu CTA */}
-      <section className="bg-foreground text-background py-20 px-6 text-center">
-        <Link
-          to="/menu"
-          className="inline-block font-display text-4xl md:text-6xl uppercase tracking-tighter underline decoration-accent underline-offset-8 hover:text-accent transition-colors"
-        >
-          View the Menu →
-        </Link>
-      </section>
-
-      {/* Heritage */}
-      <section id="story" className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <span className="font-mono text-xs uppercase tracking-widest text-accent block mb-6">
-          Sugar Shack Cafe History
-        </span>
-        <h2 className="text-3xl md:text-4xl font-body italic mb-8 leading-tight">
-          “Many regulars come to The Sugar Shack everyday, sometimes twice a day
-          because they feel at home. They say that it is their kitchen too, where
-          good friends meet and eat!”
-        </h2>
-        <div className="space-y-6 text-lg opacity-80 leading-relaxed">
-          <p>
-            The Sugar Shack Cafe was established in 1967 at 213 Main Street, the
-            same location where it sits today. It was established by Pat and Mary
-            Williams, long time Huntington Beach residents.
-          </p>
-          <p>
-            In 1979 the Williams offered the cafe to their children. All of them
-            turned it down except for Michele Turner and her husband Tim Turner.
-            The rest is history.
-          </p>
-        </div>
-        <div className="mt-10">
-          <Link
-            to="/about"
-            className="font-mono text-xs uppercase tracking-widest underline decoration-accent underline-offset-8 hover:text-accent transition-colors"
-          >
-            Read the full story →
-          </Link>
-        </div>
-      </section>
-
       {/* Image strip */}
       <section className="px-6 pb-24">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
