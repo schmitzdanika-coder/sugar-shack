@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 const links = [
   { to: "/menu", label: "The Menu" },
   { to: "/about", label: "Our Story" },
-  { to: "/reviews", label: "Reviews" },
+  { to: "/reviews", label: "Press" },
 ] as const;
 
 export function SiteNav() {

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import heroImg from "@/assets/hero-counter.jpg";
+import mascotImg from "@/assets/sugar-shack-mascot.png";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -74,6 +75,15 @@ function HomePage() {
           </div>
         </div>
       </header>
+
+      {/* Mascot */}
+      <section className="px-6 pb-16 max-w-7xl mx-auto flex justify-center">
+        <img
+          src={mascotImg}
+          alt="Sugar Shack Cafe mascot holding a trophy and a stack of pancakes"
+          className="w-48 md:w-64 h-auto"
+        />
+      </section>
 
       {/* Location */}
       <section id="location" className="px-6 pb-24">
