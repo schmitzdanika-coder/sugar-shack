@@ -40,6 +40,9 @@ function HomePage() {
               <span className="block mt-3 text-[10px] md:text-xs uppercase tracking-[0.25em] opacity-90 pt-2">
                 Family Owned &amp; Operated Since 1967
               </span>
+              <span className="block mt-2 text-sm md:text-base italic opacity-90">
+                Breakfast served all day
+              </span>
             </div>
             <p className="mt-8 text-xl max-w-md text-pretty leading-relaxed italic">
               “There is a tradition in Huntington Beach that says that no one is a
