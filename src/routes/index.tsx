@@ -9,17 +9,17 @@ export const Route = createFileRoute("/")({
   component: HomePage,
   head: () => ({
     meta: [
-      { title: "The Sugar Shack Cafe — Huntington Beach Breakfast Since 1967" },
+      { title: "The Sugar Shack Cafe — Huntington Beach, Established 1967" },
       {
         name: "description",
         content:
-          "A half-block from the Huntington Beach Pier. Family-run breakfast, served all day. 213½ Main St. Call (714) 536-0355.",
+          "The Sugar Shack Cafe. Family-owned since 1967. 213½ Main Street, Huntington Beach, CA. (714) 536-0355.",
       },
       { property: "og:title", content: "The Sugar Shack Cafe" },
       {
         property: "og:description",
         content:
-          "Surf City's favorite breakfast counter since 1967. Half a block from the Huntington Beach Pier.",
+          "Family-owned since 1967. 213½ Main Street, Huntington Beach.",
       },
     ],
   }),
@@ -27,19 +27,19 @@ export const Route = createFileRoute("/")({
 
 const dishes = [
   {
-    name: "Main St. Omelette",
-    price: "$18",
-    desc: "Three eggs, mushrooms, sprouts, cheddar, and avocado. The local gold standard.",
+    name: "Main Street Omelette",
+    price: "$18.00",
+    desc: "Avocado, mushrooms, onions, sprouts & cheese.",
   },
   {
-    name: "Shack Burrito",
-    price: "$18",
-    desc: "Avocado, mushrooms, onions, sprouts and cheese in a warm flour tortilla with hash browns.",
+    name: "Main Street Burrito",
+    price: "$18.00",
+    desc: "Avocado, mushrooms, onions, sprouts & cheese.",
   },
   {
-    name: "Bacon & 2 Eggs",
-    price: "$16.50",
-    desc: "Four thick slices, two eggs any style, hash browns and toast. Hot coffee on the house.",
+    name: "Keppler's",
+    price: "$18.00",
+    desc: "Eggs scrambled on an English muffin topped with sliced avocado, tomato, bacon & hollandaise sauce. Served with hashbrowns.",
   },
 ];
 
@@ -53,11 +53,11 @@ function HomePage() {
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-7 animate-reveal">
             <h1 className="font-display text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] uppercase leading-[0.85] tracking-tighter text-balance">
-              Main <br /> <span className="text-accent">Street</span> <br /> Soul.
+              The <br /> <span className="text-accent">Sugar</span> <br /> Shack.
             </h1>
             <p className="mt-8 text-xl max-w-md text-pretty leading-relaxed italic">
-              A half-block from the Huntington Beach Pier. Where the surfers fuel up,
-              the locals catch up, and the coffee never stops flowing.
+              “There is a tradition in Huntington Beach that says that no one is a
+              true surfer unless they have been to the Sugar Shack.”
             </p>
             <div className="mt-10 flex flex-wrap gap-4 font-mono text-xs uppercase tracking-widest">
               <Link
@@ -77,7 +77,7 @@ function HomePage() {
           <div className="lg:col-span-5 animate-reveal [animation-delay:200ms]">
             <img
               src={heroImg}
-              alt="Sun-faded photo of the Sugar Shack diner counter with surfboards outside"
+              alt="The Sugar Shack diner counter"
               width={1024}
               height={1280}
               className="w-full aspect-[4/5] object-cover rounded-sm shadow-2xl rotate-2 border border-border"
@@ -91,10 +91,10 @@ function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 border-b border-background/20 pb-4">
             <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tighter">
-              Signature Dishes
+              From the Menu
             </h2>
             <span className="font-mono text-xs opacity-60 uppercase mb-2">
-              Served All Day
+              Breakfast & Lunch
             </span>
           </div>
 
@@ -128,23 +128,32 @@ function HomePage() {
       {/* Heritage */}
       <section id="story" className="py-24 px-6 max-w-4xl mx-auto text-center">
         <span className="font-mono text-xs uppercase tracking-widest text-accent block mb-6">
-          Our Heritage
+          Sugar Shack Cafe History
         </span>
         <h2 className="text-3xl md:text-4xl font-body italic mb-8 leading-tight">
-          “Fifty years of flipping eggs a half-block from the sand. Same kitchen.
-          Same regulars. Same coffee pot.”
+          “Many regulars come to The Sugar Shack everyday, sometimes twice a day
+          because they feel at home. They say that it is their kitchen too, where
+          good friends meet and eat!”
         </h2>
         <div className="space-y-6 text-lg opacity-80 leading-relaxed">
           <p>
-            Since 1967, the Sugar Shack has been a Huntington Beach institution.
-            Three generations of surfers, lifeguards, locals, and lost tourists have
-            crowded our counter for breakfast served all day, every day.
+            The Sugar Shack Cafe was established in 1967 at 213 Main Street, the
+            same location where it sits today. It was established by Pat and Mary
+            Williams, long time Huntington Beach residents.
           </p>
           <p>
-            We don't do fancy. We do fresh, we do fast, and we treat you like you've
-            been sitting at our counter for fifty years — even if it's your first
-            time in Surf City.
+            In 1979 the Williams offered the cafe to their children. All of them
+            turned it down except for Michele Turner and her husband Tim Turner.
+            The rest is history.
           </p>
+        </div>
+        <div className="mt-10">
+          <Link
+            to="/about"
+            className="font-mono text-xs uppercase tracking-widest underline decoration-accent underline-offset-8 hover:text-accent transition-colors"
+          >
+            Read the full story →
+          </Link>
         </div>
       </section>
 
@@ -153,7 +162,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
           <img
             src={breakfastImg}
-            alt="Classic American breakfast plate with eggs, bacon, hash browns and pancakes"
+            alt="Breakfast at the Sugar Shack"
             width={1024}
             height={1024}
             loading="lazy"
@@ -161,7 +170,7 @@ function HomePage() {
           />
           <img
             src={pierImg}
-            alt="Hand-drawn illustration of the Huntington Beach pier at sunset"
+            alt="The Huntington Beach pier"
             width={1280}
             height={896}
             loading="lazy"
@@ -185,29 +194,21 @@ function HomePage() {
                 </p>
               </div>
               <div>
-                <p className="uppercase text-accent mb-2 tracking-widest">
-                  Kitchen Hours
-                </p>
-                <p>
-                  Open Daily
-                  <br />
-                  6:00 AM – 2:00 PM
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  to="/directions"
-                  className="underline decoration-accent underline-offset-4 hover:text-accent transition-colors"
-                >
-                  Get Directions
-                </Link>
-                <span className="opacity-30">/</span>
+                <p className="uppercase text-accent mb-2 tracking-widest">Phone</p>
                 <a
                   href="tel:7145360355"
                   className="underline decoration-accent underline-offset-4 hover:text-accent transition-colors"
                 >
-                  714.536.0355
+                  (714) 536-0355
                 </a>
+              </div>
+              <div>
+                <Link
+                  to="/directions"
+                  className="underline decoration-accent underline-offset-4 hover:text-accent transition-colors"
+                >
+                  Get Directions →
+                </Link>
               </div>
             </div>
           </div>
