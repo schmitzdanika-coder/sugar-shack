@@ -60,9 +60,6 @@ function ReviewsPage() {
         <span className="font-mono text-xs uppercase tracking-widest text-accent">
           Press & Reviews
         </span>
-        <h1 className="mt-4 font-display text-6xl md:text-8xl uppercase leading-[0.9] tracking-tighter">
-          What They Say
-        </h1>
         <p className="mt-6 max-w-xl italic text-lg opacity-80">
           TripAdvisor Certificate of Excellence five years running (2011–2015) and
           MyFox Hot List Best Breakfast (2009 & 2010).

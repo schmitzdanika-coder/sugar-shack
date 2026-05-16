@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import heroImg from "@/assets/hero-counter.jpg";
+import mascotImg from "@/assets/sugar-shack-mascot.png";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
