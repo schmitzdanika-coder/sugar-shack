@@ -52,12 +52,12 @@ function HomePage() {
       <header className="relative px-6 pt-12 pb-24 max-w-7xl mx-auto overflow-hidden">
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-7 animate-reveal">
-            <div className="inline-block bg-[#1f5a3a] text-[#f5ecd6] px-8 py-6 md:px-12 md:py-8 rounded-sm shadow-2xl border-2 border-[#143d27] -rotate-2">
+            <div className="text-[#1f5a3a]">
               <span className="block text-sm md:text-base italic opacity-90 -mb-2">Michele's</span>
               <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase leading-[0.9] tracking-tight text-balance">
                 The Sugar <br /> Shack Cafe
               </h1>
-              <span className="block mt-3 text-[10px] md:text-xs uppercase tracking-[0.25em] opacity-90 border-t border-[#f5ecd6]/30 pt-2">
+              <span className="block mt-3 text-[10px] md:text-xs uppercase tracking-[0.25em] opacity-90 pt-2">
                 Family Owned &amp; Operated Since 1967
               </span>
             </div>
